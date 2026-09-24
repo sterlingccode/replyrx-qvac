@@ -1,6 +1,6 @@
 # ReplyRx
 
-ReplyRx is a simple localhost app that uses QVAC local inference to analyze a pasted message and generate three reply styles: friendly, direct, and professional.
+sterlingccode ReplyRx is a simple localhost app that uses QVAC local inference to analyze a pasted message and generate three reply styles: friendly, direct, and professional.
 
 ## Built with
 - QVAC SDK 0.20.0
