@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReplyRx — Understand it. Reply better.</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <span class="eyebrow">QVAC LOCAL AI</span>
+      <h1>ReplyRx</h1>
+      <p>Paste a message. Understand the vibe. Choose a reply that fits.</p>
+    </header>
+
+    <section class="card">
+      <label for="message">Message</label>
+      <textarea id="message" maxlength="5000" placeholder="Example: Hey, are you still coming? I need to know soon."></textarea>
+      <div class="row">
+        <span id="counter">0 / 5000</span>
+        <div class="actions">
+          <button id="clear" class="ghost">Clear</button>
+          <button id="analyze">Analyze message</button>
+        </div>
+      </div>
+      <p class="hint">ReplyRx uses QVAC for local inference on your machine.</p>
+    </section>
+
+    <section id="loading" class="status hidden">Reading locally with QVAC…</section>
+    <section id="error" class="error hidden"></section>
+
+    <section id="result" class="result hidden">
+      <div class="summary">
+        <div><span class="label">INTENT</span><p id="intent"></p></div>
+        <div><span class="label">TONE</span><p id="tone"></p></div>
+      </div>
+      <div class="context-box">
+        <span class="label">WHAT IT MEANS</span>
+        <p id="context"></p>
+      </div>
+
+      <div class="reply-head">
+        <div><span class="eyebrow">3 REPLY OPTIONS</span><h2>Pick your style</h2></div>
+      </div>
+
+      <div class="reply-grid">
+        <article class="reply-card">
+          <div class="style">Friendly</div>
+          <p id="friendly"></p>
+          <button class="copy ghost" data-key="friendly">Copy</button>
+        </article>
+        <article class="reply-card">
+          <div class="style">Direct</div>
+          <p id="direct"></p>
+          <button class="copy ghost" data-key="direct">Copy</button>
+        </article>
+        <article class="reply-card">
+          <div class="style">Professional</div>
+          <p id="professional"></p>
+          <button class="copy ghost" data-key="professional">Copy</button>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "replyrx-qvac",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=22"},
+  "dependencies": {
+    "@qvac/sdk": "0.20.0",
+    "express": "^5.1.0"
+  }
+}

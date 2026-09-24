@@ -1,0 +1,31 @@
+Use these one at a time in Claude Code from inside the replyrx-qvac folder.
+
+COMMIT 1/4
+Set up the ReplyRx project so it runs on localhost. Review the existing files, make sure the Node/Express structure is clean, and verify package.json, README, LICENSE, and .gitignore are present.
+
+Then run:
+git init
+git branch -M main
+git add .
+git commit -m "feat: initialize ReplyRx project"
+
+COMMIT 2/4
+Review the QVAC implementation. Keep @qvac/sdk 0.20.0, loadModel(), and completion(). Improve the message-analysis prompt and error handling without adding any cloud AI service.
+
+Then run:
+git add .
+git commit -m "feat: add QVAC reply analysis"
+
+COMMIT 3/4
+Improve the ReplyRx UI with clearer reply cards, loading and error states, mobile responsiveness, and working copy/clear actions. Keep the app simple.
+
+Then run:
+git add .
+git commit -m "feat: improve ReplyRx UI"
+
+COMMIT 4/4
+Finalize README.md and GitHub-ready files. Keep the MIT LICENSE and .gitignore. Make sure the README explains localhost setup, QVAC usage, project structure, and repository name.
+
+Then run:
+git add .
+git commit -m "docs: finalize GitHub submission"
